@@ -16,7 +16,9 @@ Removes this tool and copies build dependencies, configuration files and scripts
 
 We suggest that you begin by typing:
 ```bash
-  cd gymdemo
+  cd frontend
   npm start
 ```
 Happy hacking!
+
+**[YouTube Demo](https://youtu.be/XNqSmdWtPlI)**
