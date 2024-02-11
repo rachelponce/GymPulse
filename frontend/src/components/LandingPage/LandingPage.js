@@ -1,12 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { LandingPageWrapper } from './LandingPage.styled';
+import { LandingPageWrapper, Title, Button} from './LandingPage.styled';
+
 
 const LandingPage = () => (
- <LandingPageWrapper>
-    LandingPage Component
+ <LandingPageWrapper className='wrapper'>
+     <Title> Welcome to Gym Pulse </Title>
+     <Button onClick={handleStarting}>Get Started</Button>
  </LandingPageWrapper>
 );
+
+const handleStarting = () => {
+    console.log('Starting...');
+  };
 
 LandingPage.propTypes = {};
 

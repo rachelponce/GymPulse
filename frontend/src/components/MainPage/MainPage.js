@@ -12,7 +12,7 @@ const MainPage = () => {
    }
 
    return (
-      <MainPageWrapper>
+      <MainPageWrapper className='wrapper'> 
          MainPage Component
          <Button onClick={handleClick}>Gym Time!</Button>
       </MainPageWrapper>
