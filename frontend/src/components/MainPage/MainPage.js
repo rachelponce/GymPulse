@@ -14,10 +14,8 @@ const MainPage = () => {
    return (
       <MainPageWrapper>
          <center>
-            <TextBackground>
-               <Header>It's Gym Time!</Header>
-               <Button variant="contained" color="success" onClick={handleClick}>Gym Time!</Button>
-            </TextBackground>
+            <Header>It's Gym Time!</Header>
+            <Button variant="contained" color="success" onClick={handleClick}>Gym Time!</Button>
          </center>
       </MainPageWrapper>
    );
