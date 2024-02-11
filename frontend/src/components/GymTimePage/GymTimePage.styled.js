@@ -23,7 +23,7 @@ export const CardsWrapper = styled.div`
 export const Card = styled.div`
     background: #4F3130;
     border-radius: 25px;
-    width: 20vw;
+    width: ${({ expanded }) => expanded ? '80vw' : '20vw'};
     height: 50vh;
     margin: 5%;
     padding: 1%;
@@ -39,7 +39,7 @@ export const Card = styled.div`
 export const Photo = styled.img`
     border: 1px solid white;
     object-fit: contain;
-    max-width: 100%;
+    max-width: ${({ expanded }) => expanded ? '30%' : '100%'};
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -51,5 +51,14 @@ export const Title = styled.h1`
 
 export const Header = styled.h2`
     color: white;
-    text-align: center;
+    font-size: 30px;
+    text-align: ${({ expanded }) => expanded ? 'right' : 'center'};
+`;
+
+export const CustomText = styled.div`
+    color: white;
+    font-size: 15px;
+`;
+
+export const ListItem = styled.h2`
 `;
