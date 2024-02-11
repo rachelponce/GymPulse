@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MainPageWrapper } from './MainPage.styled';
+import { MainPageWrapper, Header, TextBackground } from './MainPage.styled';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,9 +12,13 @@ const MainPage = () => {
    }
 
    return (
-      <MainPageWrapper className='wrapper'> 
-         MainPage Component
-         <Button onClick={handleClick}>Gym Time!</Button>
+      <MainPageWrapper>
+         <center>
+            <TextBackground>
+               <Header>It's Gym Time!</Header>
+               <Button variant="contained" color="success" onClick={handleClick}>Gym Time!</Button>
+            </TextBackground>
+         </center>
       </MainPageWrapper>
    );
 };
